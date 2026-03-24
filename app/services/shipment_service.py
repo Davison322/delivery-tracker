@@ -14,7 +14,9 @@ class ShipmentService:
         self.session = session
 
     async def create_shipment(self, data: ShipmentCreate) -> Shipment:
-        tracking_number = "".join(random.choices(string.ascii_uppercase + string.digits, k=12))
+        tracking_number = "".join(
+            random.choices(string.ascii_uppercase + string.digits, k=12)
+        )
         shipment = Shipment(
             tracking_number=tracking_number,
             sender_name=data.sender_name,

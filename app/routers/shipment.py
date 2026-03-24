@@ -7,7 +7,6 @@ from app.db.base import AsyncSessionLocal
 from app.schemas.shipment import ShipmentCreate, ShipmentResponse
 from app.services.shipment_service import ShipmentService
 
-
 router = APIRouter(prefix="/shipments", tags=["shipments"])
 
 

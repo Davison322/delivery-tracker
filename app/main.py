@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 
 from app.routers.shipment import router as shipment_router
-from app.models import shipment, status_event
-
 
 app = FastAPI(title="Delivery Tracker")
 

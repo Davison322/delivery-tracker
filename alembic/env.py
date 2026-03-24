@@ -1,13 +1,11 @@
 import asyncio
 from logging.config import fileConfig
 
-from alembic import context
-from sqlalchemy.ext.asyncio import async_engine_from_config
 from sqlalchemy import pool
+from sqlalchemy.ext.asyncio import async_engine_from_config
 
+from alembic import context
 from app.db.base import Base
-from app.models.shipment import Shipment
-from app.models.status_event import StatusEvent
 
 config = context.config
 fileConfig(config.config_file_name)

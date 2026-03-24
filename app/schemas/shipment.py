@@ -6,14 +6,6 @@ from pydantic import BaseModel
 from app.models.enums import ShipmentStatus
 
 
-import uuid
-from datetime import datetime
-
-from pydantic import BaseModel
-
-from app.models.enums import ShipmentStatus
-
-
 class ShipmentCreate(BaseModel):
     sender_name: str
     recipient_name: str
